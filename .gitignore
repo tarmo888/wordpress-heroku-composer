@@ -1,0 +1,11 @@
+cms/*
+vendor/*
+wp-content/plugins/custom-field-suite/*
+wp-content/plugins/redis-cache/*
+wp-content/plugins/sendgrid-email-delivery-simplified/*
+wp-content/plugins/wp-amazon-s3-and-cloudfront/*
+wp-content/plugins/wp-amazon-web-services/*
+wp-content/themes/twentyseventeen/*
+wp-content/upgrade/*
+wp-content/uploads/*
+wp-content/object-cache.php

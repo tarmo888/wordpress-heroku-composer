@@ -1,0 +1,44 @@
+{
+	"require": {
+		"php": "5.6.*|7.*",
+		"ext-curl": "*",
+		"ext-gd": "*",
+		"ext-mbstring": "*",
+		"johnpbloch/wordpress": "^4.8",
+		"deliciousbrains/wp-amazon-web-services": "*",
+		"deliciousbrains/wp-amazon-s3-and-cloudfront": "*",
+		"tillkruss/redis-cache": "*",
+		"wpackagist-plugin/custom-field-suite": "*",
+		"wpackagist-plugin/sendgrid-email-delivery-simplified": "1.10.9",
+		"wpackagist-theme/twentyseventeen": "*"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	],
+	"scripts": {
+		"post-install-cmd": [
+			"cp wp-content/plugins/redis-cache/includes/object-cache.php wp-content/object-cache.php"
+		],
+		"post-update-cmd": [
+			"cp wp-content/plugins/redis-cache/includes/object-cache.php wp-content/object-cache.php"
+		],
+		"post-create-project-cmd": [
+			"heroku apps:create --region eu",
+			"heroku config:set BUILDPACK_URL=heroku/php",
+			"heroku addons:add jawsdb-maria:kitefin",
+			"heroku addons:add heroku-redis:hobby-dev",
+			"heroku addons:add sendgrid:starter",
+			"heroku addons:add papertrail:choklad",
+			"heroku addons:add scheduler:standard",
+			"heroku config:set AWS_ACCESS_KEY_ID= AWS_SECRET_ACCESS_KEY=",
+			"heroku config:set DISABLE_WP_CRON=0 FORCE_SSL=0",
+			"heroku config:set AUTH_KEY= SECURE_AUTH_KEY= LOGGED_IN_KEY= NONCE_KEY= AUTH_SALT= SECURE_AUTH_SALT= LOGGED_IN_SALT= NONCE_SALT="
+		]
+	},
+	"extra": {
+		"wordpress-install-dir": "cms"
+	}
+}

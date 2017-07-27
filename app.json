@@ -1,0 +1,53 @@
+{
+	"addons": ["jawsdb-maria:kitefin", "heroku-redis:hobby-dev", "sendgrid:starter", "papertrail:choklad", "scheduler:standard"],
+	"env": {
+		"AWS_ACCESS_KEY_ID": {
+			"description": "AWS Access Key",
+			"value": ""
+		},
+		"AWS_SECRET_ACCESS_KEY": {
+			"description": "Secret Access Key",
+			"value": ""
+		},
+		"DISABLE_WP_CRON": {
+			"description": "Disable WP Cron to call it from Scheduler instead?",
+			"value": "0"
+		},
+		"FORCE_SSL": {
+			"description": "Force login and admin to HTTPS?",
+			"value": "0"
+		},
+		"AUTH_KEY": {
+			"description": "Hash for AUTH_KEY",
+			"generator": "secret"
+		},
+		"SECURE_AUTH_KEY": {
+			"description": "Hash for SECURE_AUTH_KEY",
+			"generator": "secret"
+		},
+		"LOGGED_IN_KEY": {
+			"description": "Hash for LOGGED_IN_KEY",
+			"generator": "secret"
+		},
+		"NONCE_KEY": {
+			"description": "Hash for NONCE_KEY",
+			"generator": "secret"
+		},
+		"AUTH_SALT": {
+			"description": "Hash for AUTH_SALT",
+			"generator": "secret"
+		},
+		"SECURE_AUTH_SALT": {
+			"description": "Hash for SECURE_AUTH_SALT",
+			"generator": "secret"
+		},
+		"LOGGED_IN_SALT": {
+			"description": "Hash for LOGGED_IN_SALT",
+			"generator": "secret"
+		},
+		"NONCE_SALT": {
+			"description": "Hash for NONCE_SALT",
+			"generator": "secret"
+		}
+	}
+}

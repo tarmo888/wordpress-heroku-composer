@@ -1,0 +1,408 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e53115d354aa37a6442c7d1fc18524d4",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "reference": "36e5b5843203d7f1cf6ffb0305a97e014387bd8e",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\Installers\\": "src/Composer/Installers"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "https://composer.github.io/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "ImageCMS",
+                "MODX Evo",
+                "Mautic",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2016-04-13T19:46:30+00:00"
+        },
+        {
+            "name": "deliciousbrains/wp-amazon-s3-and-cloudfront",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deliciousbrains/wp-amazon-s3-and-cloudfront.git",
+                "reference": "761e98dad46938e58cf36a85fb536f146a7fe9ea"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deliciousbrains/wp-amazon-s3-and-cloudfront/zipball/761e98dad46938e58cf36a85fb536f146a7fe9ea",
+                "reference": "761e98dad46938e58cf36a85fb536f146a7fe9ea",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv3"
+            ],
+            "description": "Automatically copies media uploads to Amazon S3 for delivery. Optionally configure Amazon CloudFront for even faster delivery.",
+            "homepage": "https://github.com/deliciousbrains/wp-amazon-s3-and-cloudfront",
+            "keywords": [
+                "amazon-web-services",
+                "cdn",
+                "cloudfront",
+                "plugin",
+                "s3"
+            ],
+            "time": "2017-06-19T14:14:49+00:00"
+        },
+        {
+            "name": "deliciousbrains/wp-amazon-web-services",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deliciousbrains/wp-amazon-web-services.git",
+                "reference": "297cb203b7e640253323a4322721f7e1f0f924d9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deliciousbrains/wp-amazon-web-services/zipball/297cb203b7e640253323a4322721f7e1f0f924d9",
+                "reference": "297cb203b7e640253323a4322721f7e1f0f924d9",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPLv3"
+            ],
+            "description": "Houses the Amazon Web Services (AWS) PHP libraries and manages access keys. Required by other AWS plugins.",
+            "homepage": "https://github.com/deliciousbrains/wp-amazon-web-services",
+            "keywords": [
+                "amazon",
+                "amazon-web-services",
+                "aws",
+                "plugin"
+            ],
+            "time": "2017-06-19T14:08:48+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress",
+            "version": "4.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress.git",
+                "reference": "24edf4daca6bc15ad3b78c5927468df487d47a37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/24edf4daca6bc15ad3b78c5927468df487d47a37",
+                "reference": "24edf4daca6bc15ad3b78c5927468df487d47a37",
+                "shasum": ""
+            },
+            "require": {
+                "johnpbloch/wordpress-core": "4.8.0",
+                "johnpbloch/wordpress-core-installer": "^1.0",
+                "php": ">=5.3.2"
+            },
+            "type": "package",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "time": "2017-06-08T15:12:19+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress-core",
+            "version": "4.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core.git",
+                "reference": "58f209dfd66f61c4398a47cf53e90d378abc25d7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/58f209dfd66f61c4398a47cf53e90d378abc25d7",
+                "reference": "58f209dfd66f61c4398a47cf53e90d378abc25d7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "wordpress-core",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms",
+                "wordpress"
+            ],
+            "time": "2017-06-08T15:12:14+00:00"
+        },
+        {
+            "name": "johnpbloch/wordpress-core-installer",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
+                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/e9e767f2d9f994f358c34b41def2c410ad8717f2",
+                "reference": "e9e767f2d9f994f358c34b41def2c410ad8717f2",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "conflict": {
+                "composer/installers": "<1.0.6"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0",
+                "phpunit/phpunit": ">=4.8.35"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "johnpbloch\\Composer\\WordPressCorePlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "johnpbloch\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John P. Bloch",
+                    "email": "me@johnpbloch.com"
+                }
+            ],
+            "description": "A custom installer to handle deploying WordPress with composer",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2017-05-31T18:42:33+00:00"
+        },
+        {
+            "name": "tillkruss/redis-cache",
+            "version": "1.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tillkruss/redis-cache.git",
+                "reference": "3b05fcbd74296ee1e9146517ad0bc2ce53bd4a72"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tillkruss/redis-cache/zipball/3b05fcbd74296ee1e9146517ad0bc2ce53bd4a72",
+                "reference": "3b05fcbd74296ee1e9146517ad0bc2ce53bd4a72",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.3"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Till Krüss",
+                    "homepage": "https://till.im/"
+                }
+            ],
+            "description": "A persistent object cache backend for WordPress powered by Redis. Supports Predis, PhpRedis, HHVM, replication and clustering.",
+            "homepage": "https://github.com/tillkruss/redis-cache",
+            "time": "2016-11-07T02:09:42+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/custom-field-suite",
+            "version": "2.5.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/custom-field-suite/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/custom-field-suite.zip?timestamp=1493255890",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/custom-field-suite/"
+        },
+        {
+            "name": "wpackagist-plugin/sendgrid-email-delivery-simplified",
+            "version": "1.10.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/sendgrid-email-delivery-simplified/",
+                "reference": "tags/1.10.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/sendgrid-email-delivery-simplified.1.10.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/sendgrid-email-delivery-simplified/"
+        },
+        {
+            "name": "wpackagist-theme/twentyseventeen",
+            "version": "1.3",
+            "source": {
+                "type": "svn",
+                "url": "https://themes.svn.wordpress.org/twentyseventeen/",
+                "reference": "1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/twentyseventeen.1.3.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/twentyseventeen/"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": "5.6.*|7.*",
+        "ext-curl": "*",
+        "ext-gd": "*",
+        "ext-mbstring": "*"
+    },
+    "platform-dev": []
+}
