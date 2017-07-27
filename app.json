@@ -1,6 +1,11 @@
 {
+	"name": "tarmo888/wordpress-heroku-composer",
+	"description": "Wordpress boilerplate that is deployable to Heroku cloud platform using Composer packages.",
+	"repository": "https://github.com/tarmo888/wordpress-heroku-composer",
+	"keywords": ["wordpress", "heroku", "composer", "php", "mysql", "apache2"],
 	"addons": ["jawsdb-maria:kitefin", "heroku-redis:hobby-dev", "sendgrid:starter", "papertrail:choklad", "scheduler:standard"],
 	"env": {
+		"BUILDPACK_URL": "heroku/php",
 		"AWS_ACCESS_KEY_ID": {
 			"description": "AWS Access Key",
 			"value": ""
