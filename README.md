@@ -1,19 +1,28 @@
 Use Heroku Button or Bash commands for deploying.
 
+
 ## Deploy via Heroku Button
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/tarmo888/wordpress-heroku-composer/tree/master)
+
 
 ## Deploy via Bash command line
 
+Create app folder and create-project.
 ```bash
 mkdir new-app-folder
 cd new-app-folder
-git clone https://github.com/tarmo888/wordpress-heroku-composer.git .
+composer create-project --stability dev tarmo888/wordpress-heroku-composer .
 ```
 
-Login to Heroku and create new app.
+Alternatively (if composer create-project didn't work), you can use git clone too make shallow copy
 ```bash
+git clone --depth=1 https://github.com/tarmo888/wordpress-heroku-composer.git . && rm -rf .git
+```
+
+Login to Heroku and create new app (make sure to git init first).
+```bash
+git init
 heroku login
 heroku apps:create new-app-name --buildpack heroku/php --region eu
 ```
