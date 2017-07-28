@@ -1,6 +1,8 @@
 {
 	"name": "tarmo888/wordpress-heroku-composer",
 	"description": "Wordpress boilerplate that is deployable to Heroku cloud platform using Composer packages.",
+	"keywords": ["wordpress", "heroku", "composer", "php", "mysql", "apache2"],
+	"license": "MIT",
 	"require": {
 		"php": "5.6.*|7.*",
 		"ext-curl": "*",
