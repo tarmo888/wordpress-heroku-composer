@@ -12,7 +12,7 @@ Create app folder and create-project.
 ```bash
 mkdir new-app-folder
 cd new-app-folder
-composer create-project --stability dev tarmo888/wordpress-heroku-composer .
+composer create-project --stability dev --no-interaction tarmo888/wordpress-heroku-composer .
 ```
 
 Alternatively (if composer create-project didn't work), you can use git clone too make shallow copy
